@@ -1,0 +1,178 @@
+/* AuthPage.css — улучшенная версия */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.auth-card {
+    max-width: 420px;
+    width: 100%;
+    background: white;
+    padding: 40px 32px;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.auth-card:hover {
+    transform: scale(1.02);
+}
+
+.auth-card h1 {
+    margin: 0 0 28px 0;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* Сообщение об успехе */
+.success-message {
+    background: #e0f2e9;
+    color: #1e7b48;
+    padding: 12px;
+    border-radius: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    animation: fadeSlide 0.3s ease;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Форма */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Группа поля с иконкой */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 60px;
+    transition: all 0.2s;
+}
+
+.input-group:focus-within {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background: white;
+}
+
+.input-icon {
+    padding: 0 0 0 18px;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 14px 12px 14px 8px;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+}
+
+.password-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 16px;
+    color: #64748b;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #334155;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 8px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+/* Переключатель между входом и регистрацией */
+.toggle-link {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 0.95rem;
+    color: #4a5568;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.toggle-link:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+/* Подсказка про admin */
+.demo-hint {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 20px;
+    background: #f1f5f9;
+    padding: 8px;
+    border-radius: 40px;
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 28px 20px;
+    }
+
+    .auth-card h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-icon {
+        padding-left: 14px;
+    }
+
+    .input-group input {
+        padding: 12px 8px;
+    }
+}

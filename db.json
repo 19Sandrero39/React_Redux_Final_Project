@@ -1,0 +1,141 @@
+{
+  "parts": [
+    {
+      "id": "0kgyTt4gdec",
+      "name": "Тормозные колодки передние",
+      "price": 23,
+      "article": "VW-B4-BRK-001",
+      "category": "Тормозная система",
+      "description": "Оригинальные тормозные колодки для Passat B4 (1993-1997). Высокий ресурс, низкий уровень шума.",
+      "stock": 45,
+      "imageUrl": "https://ir.ozone.ru/s3/multimedia-p/6289219849.jpg",
+      "compatibleModels": [
+        "Passat B3",
+        "Passat B4"
+      ]
+    },
+    {
+      "id": "xshTcr-jf20",
+      "name": "Фильтр масляный",
+      "price": 10,
+      "article": "VW-B4-OIL-002",
+      "category": "Фильтры",
+      "description": "Масляный фильтр тонкой очистки. Совместим с двигателями 1.8, 2.0 бензин.",
+      "stock": 120,
+      "imageUrl": "https://avatars.mds.yandex.net/i?id=839e9200b0784b6ef5736c6251949274_l-4571791-images-thumbs&n=13",
+      "compatibleModels": [
+        "Passat B4"
+      ]
+    },
+    {
+      "id": "tg7VWjS6bb8",
+      "name": "Антифриз G12+ 5л",
+      "price": 15,
+      "article": "VW-B4-ANT-003",
+      "category": "Жидкости",
+      "description": "Готовый к использованию антифриз на основе этиленгликоля. Защита от коррозии до -40°C.",
+      "stock": 30,
+      "imageUrl": "https://ir.ozone.ru/s3/multimedia-1-z/8440974215.jpg",
+      "compatibleModels": [
+        "Passat B3",
+        "Passat B4",
+        "Golf 3"
+      ]
+    },
+    {
+      "id": "BcE9kK-bZW8",
+      "name": "Воздушный фильтр",
+      "price": 32,
+      "article": "VW-B4-AIR-004",
+      "category": "Фильтры",
+      "description": "Салонный и воздушный фильтр 2-в-1. Улавливает пыль, сажу, пыльцу.",
+      "stock": 60,
+      "imageUrl": "https://a.d-cd.net/J7Tt0OzcejRd7xC6cn-TWKDIE8A-960.jpg",
+      "compatibleModels": [
+        "Passat B4"
+      ]
+    },
+    {
+      "id": "DfSscsd4xKc",
+      "name": "WD-40 400мл",
+      "price": 5,
+      "article": "LUB-WD40-005",
+      "category": "Смазки и очистители",
+      "description": "Многофункциональная смазка для защиты от ржавчины, облегчения откручивания гаек.",
+      "stock": 200,
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/1923922/img_id4708221956091725929.jpeg/orig",
+      "compatibleModels": [
+        "Универсальный"
+      ]
+    },
+    {
+      "id": "fG8hJkL-9xZ",
+      "name": "Ремень ГРМ комплект",
+      "price": 38,
+      "article": "VW-B4-TMG-006",
+      "category": "Двигатель",
+      "description": "Комплект ремня ГРМ с натяжным роликом. Ресурс — 60 000 км.",
+      "stock": 18,
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/16277195/2a0000019886ae7a1a0071ccc7833ed9bf9d/orig",
+      "compatibleModels": [
+        "Passat B4 1.9 TDI",
+        "Passat B4 2.0"
+      ]
+    },
+    {
+      "id": "aSd2FgHj6Kl",
+      "name": "Стойка стабилизатора",
+      "price": 12,
+      "article": "VW-B4-SUS-007",
+      "category": "Подвеска",
+      "description": "Передняя стойка стабилизатора. Немецкое качество, оцинкованная сталь.",
+      "stock": 35,
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/4346078/2a00000194f24b327705ebd956e1c2040774/orig",
+      "compatibleModels": [
+        "Passat B4",
+        "Passat B3"
+      ]
+    },
+    {
+      "id": "QsW3rTy8Uio",
+      "name": "Фара левая (комплект)",
+      "price": 62,
+      "article": "VW-B4-LMP-008",
+      "category": "Электрика и оптика",
+      "description": "Сборка фары с отражателем, стеклом и патроном для лампы H4.",
+      "stock": 9,
+      "imageUrl": "https://cdn.izap24.ru/images/prodacts/sourse/394852/394852898_passat-b4-93-97-faryi-komplekt-pravaya-levyiy-depo-oe-441-11a2l-441-11a2p.jpg",
+      "compatibleModels": [
+        "Passat B4 (1994-1996)"
+      ]
+    },
+    {
+      "id": "PoIuYtReWq1",
+      "name": "Термостат 87°C",
+      "price": 17,
+      "article": "VW-B4-ENG-009",
+      "category": "Охлаждение",
+      "description": "Термостат с уплотнительным кольцом. Открытие при +87°C.",
+      "stock": 27,
+      "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12288829/2a0000019052a719ee29093a8b41cf24f8bc/orig",
+      "compatibleModels": [
+        "Passat B4 бензин 1.8/2.0"
+      ]
+    },
+    {
+      "id": "MkLoPpAaBb2",
+      "name": "Комплект прокладок ГБЦ",
+      "price": 29,
+      "article": "VW-B4-HG-010",
+      "category": "Двигатель",
+      "description": "Верхний ремкомплект: прокладка ГБЦ, впускного коллектора, клапанной крышки.",
+      "stock": 14,
+      "imageUrl": "https://ir.ozone.ru/s3/multimedia-1-s/7443339220.jpg",
+      "compatibleModels": [
+        "Passat B4 1.8",
+        "Passat B4 2.0"
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

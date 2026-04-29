@@ -1,0 +1,374 @@
+/* CartPage.css – улучшенная версия */
+
+.cart-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #1e293b;
+}
+
+/* Прогресс‑бар бесплатной доставки */
+.free-shipping {
+    background: #f0f9ff;
+    border-radius: 60px;
+    padding: 12px 20px;
+    margin-bottom: 32px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.free-shipping.success {
+    background: #e6f7e6;
+    color: #2e7d32;
+}
+
+.shipping-text {
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background: #e0e7ff;
+    border-radius: 40px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #3b82f6;
+    width: 0%;
+    height: 100%;
+    border-radius: 40px;
+    transition: width 0.3s ease;
+}
+
+/* Таблица */
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 24px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eef2f6;
+    vertical-align: middle;
+}
+
+.cart-table th {
+    font-weight: 600;
+    color: #475569;
+    background: #f8fafc;
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cart-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #f1f5f9;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.product-name {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.product-article {
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+/* Количество */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    background: #28a745;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn:hover {
+    background: #2e7d32;
+}
+
+.quantity {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.item-total {
+    font-weight: 700;
+    color: #0f3b2c;
+}
+
+/* Кнопка удаления */
+.remove-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #94a3b8;
+    transition: color 0.2s;
+    padding: 0 8px;
+}
+
+.remove-btn:hover {
+    color: #ef4444;
+}
+
+/* Анимация удаления строки */
+tr.removing {
+    animation: fadeOut 0.2s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(10px);
+        display: none;
+    }
+}
+
+/* Итоговая панель */
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 24px;
+    border-top: 2px solid #eef2f6;
+    margin-top: 8px;
+}
+
+.summary-block {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.summary-block h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1e293b;
+}
+
+.clear-cart-btn {
+    background: none;
+    border: 1px solid #cbd5e1;
+    color: #3b82f6;
+    padding: 6px 16px;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.clear-cart-btn:hover {
+    background: #fee2e2;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.checkout-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkout-btn:hover {
+    background: #218838;
+    transform: scale(1.02);
+}
+
+/* Рекомендации */
+.recommendations {
+    margin-top: 48px;
+    border-top: 1px solid #eef2f6;
+    padding-top: 32px;
+}
+
+.recommendations h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.rec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.rec-card {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.rec-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.rec-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.rec-card p {
+    font-weight: 500;
+    margin: 0 0 6px;
+    font-size: 0.9rem;
+}
+
+.rec-price {
+    font-weight: bold;
+    color: #28a745;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.rec-link {
+    display: inline-block;
+    padding: 6px 16px;
+    background: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #3b82f6;
+    border: 1px solid #cbd5e1;
+}
+
+.rec-link:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Пустая корзина с рекомендациями */
+.empty-cart {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.recommendations-empty {
+    margin-top: 40px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .cart-container {
+        margin: 20px;
+        padding: 16px;
+    }
+
+    .cart-table thead {
+        display: none;
+    }
+
+    .cart-table tr {
+        display: block;
+        margin-bottom: 24px;
+        border: 1px solid #eef2f6;
+        border-radius: 20px;
+        padding: 12px;
+    }
+
+    .cart-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: none;
+        gap: 12px;
+    }
+
+    .cart-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        width: 40%;
+    }
+
+    .product-cell {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .quantity-controls {
+        justify-content: flex-end;
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .summary-block {
+        justify-content: space-between;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rec-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
